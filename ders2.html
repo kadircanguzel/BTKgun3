@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+    <h2>Ders2 Çizim Yapma</h2>
+        <canvas id="canvas" width="200" height="200" style="border:1px solid black;"></canvas>
+        <script>
+        
+            var c=document.getElementById("canvas");
+            var ctx= c.getContext("2d");
+            //çizgi Çizme
+            /*ctx.moveTo(0,0);
+            ctx.lineTo(100,100);
+            ctx.lineTo(200,200);*/
+            ctx.moveTo(0,0);
+            ctx.lineTo(135,30);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(150,45,23,0,2*5);
+            ctx.stroke();
+            ctx.font="25px arial";
+            ctx.fillText("K",142,52);
+    
+            //Çember Çizme
+            /*ctx.beginPath();
+            ctx.arc(100,100,50,0,2*5);
+            ctx.stroke();*/
+    
+            //Metin Ekleme
+            /*ctx.font="25px arial";
+            ctx.fillText("K",100,100);
+            ctx.stroke();*/
+    
+    
+        </script>
+        <h3><a href="index.html">Anasayfa</a> </h3>
+        <h3><a href="ders1.html">Ders1</a> </h3>
+        <h3><a href="ders2.html">Ders2</a> </h3>
+        <h3><a href="ders3.html">Ders3</a> </h3>
+        <h3><a href="ders4.html">Ders4</a> </h3>
+        <h3><a href="ders5.html">Ders5</a> </h3>
+
+        <br>
+        <a href="index.html">Anasayfaya dön.</a>
+    </body>
+    </html>
